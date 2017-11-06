@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			/* Cooked by Chef Excellence */
+			html, body, #excellentContainerDiv {
+				height: 100%;
+				margin: 0;
+			}
+
+			body {
+				background: #fc0;
+			}
+
+			#floater {
+				height: 14.5%;
+				width: 100%;
+			}
+
+			#excellentImageTagline {
+				clear: both;
+				height: 70%;
+			}
+
+			#excellentText {
+				font-family: 'Arial';
+				opacity: 0;
+				text-transform: capitalize;
+				text-align: center;
+				font-size: 40px;
+				font-style: italic;
+				color: rgb(0, 0, 0);
+				-webkit-animation: excellentFade 2.5s;
+				animation: excellentFade 2.5s;
+				-webkit-animation-play-state: paused;
+				animation-play-state: paused;
+				-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+			}
+
+			#excellentChef {
+				display: block;
+				height: 80%;
+				padding-bottom: 40px;
+				margin: auto;
+			}
+
+			@-webkit-keyframes excellentFade {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+
+			@keyframes excellentFade {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>'An Excellent Chef Excellence Simulator'</title>
+	</head>
+
+	<body>
+		<audio id="excellentSFX" preload="preload">
+			<source src="/excellentAssets/excellentJingle.ogg" type="audio/ogg">
+			<source src="/excellentAssets/excellentJingle.mp3" type="audio/mpeg">
+		</audio>
+		<div id="excellentContainerDiv">
+			<div id="floater"></div>
+			<div id="excellentImageTagline">
+			<img id="excellentChef" src="/excellentAssets/TheFaceOfExcellence.png"/>
+			<div id="excellentText">'An Excellent <span id="excellentPhrase"></span>'</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			window.onload = function() {
+				var excellentPath = location.pathname;
+				var excellentIntPhrase = excellentPath.substring(1).split('/');
+				var excellentPhrase = decodeURI(excellentIntPhrase.join(" "));
+				var excellentSFX = document.getElementById("excellentSFX");
+				var excellentTag = document.getElementById("excellentText");
+				var excellentElement = document.getElementById("excellentPhrase");
+				if (excellentPhrase === "") { excellentPhrase = "Website"; }
+				var excellentPhraseNode = document.createTextNode(excellentPhrase);
+				excellentElement.appendChild(excellentPhraseNode);
+				excellentSFX.play();
+				excellentTag.style.WebkitAnimationPlayState = "running";
+				excellentTag.style.animationPlayState = "running";
+			};
+		</script>
+	</body>
+</html>

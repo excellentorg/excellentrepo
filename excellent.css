@@ -1,0 +1,52 @@
+/* Cooked by Chef Excellence */
+html, body, #excellentContainerDiv {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: #fc0;
+}
+
+#floater {
+	height: 14.5%;
+	width: 100%;
+}
+
+#excellentImageTagline {
+	clear: both;
+	height: 70%;
+}
+
+#excellentText {
+	font-family: 'Arial';
+	opacity: 0;
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 40px;
+	font-style: italic;
+	color: rgb(0, 0, 0);
+	-webkit-animation: excellentFade 2.5s;
+    animation: excellentFade 2.5s;
+	-webkit-animation-play-state: paused;
+    animation-play-state: paused;
+	-webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#excellentChef {
+	display: block;
+	height: 80%;
+	padding-bottom: 40px;
+	margin: auto;
+}
+
+@-webkit-keyframes excellentFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes excellentFade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
