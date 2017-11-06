@@ -38,6 +38,20 @@
         animation-fill-mode: forwards;
       }
 
+      #excellentSource {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        opacity: 0.1;
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+      }
+
+      #excellentSource:hover {
+        opacity: 1;
+      }
+
       #excellentChef {
         display: block;
         height: 80%;
@@ -64,6 +78,9 @@
       <source src="/excellentAssets/excellentJingle.ogg" type="audio/ogg">
       <source src="/excellentAssets/excellentJingle.mp3" type="audio/mpeg">
     </audio>
+    <a href="https://github.com/excellentorg/excellentrepo" title="An Excellent Source">
+      <img id="excellentSource" width="32" src="/excellentAssets/excellentOctocat.png">
+    </a>
     <div id="excellentContainerDiv">
       <div id="floater"></div>
       <div id="excellentImageTagline">
